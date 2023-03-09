@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-pohx
+  namespace: somalley-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:5ce0ef07f801809fbe0b5946bc40ee85f9de3361b3027e34c6af9d4ef8de9a5f
+        name: my-go
+        resources: {}
+status: {}
